@@ -1,1 +1,8 @@
-<router-outlet></router-outlet>
+<div [ngStyle]="{'border-bottom': 'solid black 2px'}">
+  <h2 [ngStyle]="{'text-align': 'center', 'margin': '0px 0px 5px 0px'}">{{ title | titlecase }}</h2>
+</div>
+
+<div [ngStyle]="{'display': 'flex', 'margin-top': '10px'}">
+  <app-filter></app-filter>
+  <app-main></app-main>
+</div>
