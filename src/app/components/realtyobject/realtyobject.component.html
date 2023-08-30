@@ -1,5 +1,18 @@
 <div class="realtyobject">
-    <p>{{ realtyobject.nf_name }}</p>
-    <p>{{ realtyobject.nf_area }}</p>
-    <p>{{ realtyobject.nf_status }}</p>
+    <tr>
+        <td>{{ realtyobject.nf_name }}</td>
+        <td [ngStyle]="{'width': '50%','text-align':'right'}">{{ realtyobject.nf_status }}</td>
+    </tr>
+    <tr>
+        <td>{{ realtyobject.nf_area }}</td>
+        <td [ngStyle]="{'width': '50%','text-align':'right'}">{{ realtyobject.nf_price }}</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td [ngStyle]="{'width': '50%','text-align':'right'}">{{ realtyobject.nf_amount}}</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+    </tr>
 </div>

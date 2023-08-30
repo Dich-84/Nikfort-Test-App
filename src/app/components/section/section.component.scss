@@ -1,9 +1,39 @@
 .section {
-    border: 1px solid black;
-    width: 90%;
-    height: 40px;
-    margin-right: 10px;
-    padding: 5px;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.floors {
+    width: 100%;
+}
+.section-name {
+    border: 1px solid rgb(206, 206, 206);
+    margin: 0px;
+    width: 100%;
+}
+
+.head {
     display: flex;
     flex-direction: row;
+}
+
+.floor-description {
+    width: 86px;
+    text-align: center;
+    margin: 0px;
+    padding: 5px 2px 5px 2px;
+    border: 1px solid rgb(206, 206, 206);
+}
+
+.sub-head {
+    display: flex;
+    flex-direction: column;
+    width: 100%
+}
+
+.sub-head2 {
+    display: flex;
+    flex-direction: row;
+    width: 100%
 }

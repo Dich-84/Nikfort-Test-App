@@ -1,7 +1,7 @@
 export const nf_realtyobject = [
     {
         nf_realtyobjectid: 'P1B1S1F1RO1',
-        nf_name: 'Пр1З1П1Э1 Квартира 1',
+        nf_name: 'Квартира 1',
         nf_floorid: 'P1B1S1F1',
         nf_numberonfloor: 1,
         nf_area: 60,
@@ -11,7 +11,7 @@ export const nf_realtyobject = [
     },
     {
         nf_realtyobjectid: 'P1B1S1F1RO2',
-        nf_name: 'Пр1З1П1Э1 Квартира 2',
+        nf_name: 'Квартира 2',
         nf_floorid: 'P1B1S1F1',
         nf_numberonfloor: 2,
         nf_area: 50,
@@ -21,7 +21,7 @@ export const nf_realtyobject = [
     },
     {
         nf_realtyobjectid: 'P1B1S1F1RO3',
-        nf_name: 'Пр1З1П1Э1 Квартира 3',
+        nf_name: 'Квартира 3',
         nf_floorid: 'P1B1S1F1',
         nf_numberonfloor: 3,
         nf_area: 65,
@@ -31,7 +31,7 @@ export const nf_realtyobject = [
     },
     {
         nf_realtyobjectid: 'P1B1S1F2RO1',
-        nf_name: 'Пр1З1П1Э2 Квартира 1',
+        nf_name: 'Квартира 1',
         nf_floorid: 'P1B1S1F2',
         nf_numberonfloor: 1,
         nf_area: 60,
@@ -41,7 +41,7 @@ export const nf_realtyobject = [
     },
     {
         nf_realtyobjectid: 'P1B1S1F2RO2',
-        nf_name: 'Пр1З1П1Э2 Квартира 2',
+        nf_name: 'Квартира 2',
         nf_floorid: 'P1B1S1F2',
         nf_numberonfloor: 2,
         nf_area: 50,
@@ -51,7 +51,7 @@ export const nf_realtyobject = [
     },
     {
         nf_realtyobjectid: 'P1B1S1F2RO3',
-        nf_name: 'Пр1З1П1Э2 Квартира 3',
+        nf_name: 'Квартира 3',
         nf_floorid: 'P1B1S1F2',
         nf_numberonfloor: 3,
         nf_area: 65,
@@ -61,7 +61,7 @@ export const nf_realtyobject = [
     },
     {
         nf_realtyobjectid: 'P1B1S2F1RO1',
-        nf_name: 'Пр1З1П2Э1 Квартира 1',
+        nf_name: 'Квартира 1',
         nf_floorid: 'P1B1S2F1',
         nf_numberonfloor: 1,
         nf_area: 60,
@@ -71,7 +71,7 @@ export const nf_realtyobject = [
     },
     {
         nf_realtyobjectid: 'P1B1S2F1RO2',
-        nf_name: 'Пр1З1П2Э1 Квартира 2',
+        nf_name: 'Квартира 2',
         nf_floorid: 'P1B1S2F1',
         nf_numberonfloor: 2,
         nf_area: 50,
@@ -81,7 +81,7 @@ export const nf_realtyobject = [
     },
     {
         nf_realtyobjectid: 'P1B1S2F1RO3',
-        nf_name: 'Пр1З1П2Э1 Квартира 3',
+        nf_name: 'Квартира 3',
         nf_floorid: 'P1B1S2F1',
         nf_numberonfloor: 3,
         nf_area: 65,
@@ -91,7 +91,7 @@ export const nf_realtyobject = [
     },
     {
         nf_realtyobjectid: 'P1B1S2F2RO1',
-        nf_name: 'Пр1З1П2Э2 Квартира 1',
+        nf_name: 'Квартира 1',
         nf_floorid: 'P1B1S2F2',
         nf_numberonfloor: 1,
         nf_area: 60,
@@ -101,7 +101,7 @@ export const nf_realtyobject = [
     },
     {
         nf_realtyobjectid: 'P1B1S2F2RO2',
-        nf_name: 'Пр1З1П2Э2 Квартира 2',
+        nf_name: 'Квартира 2',
         nf_floorid: 'P1B1S2F2',
         nf_numberonfloor: 2,
         nf_area: 50,
@@ -111,7 +111,7 @@ export const nf_realtyobject = [
     },
     {
         nf_realtyobjectid: 'P1B1S2F2RO3',
-        nf_name: 'Пр1З1П2Э2 Квартира 3',
+        nf_name: 'Квартира 3',
         nf_floorid: 'P1B1S2F2',
         nf_numberonfloor: 3,
         nf_area: 65,
@@ -121,7 +121,7 @@ export const nf_realtyobject = [
     },
     {
         nf_realtyobjectid: 'P1B2S1F1RO1',
-        nf_name: 'Пр1З2П1Э1 Квартира 1',
+        nf_name: 'Квартира 1',
         nf_floorid: 'P1B2S1F1',
         nf_numberonfloor: 1,
         nf_area: 45,
@@ -131,7 +131,7 @@ export const nf_realtyobject = [
     },
     {
         nf_realtyobjectid: 'P1B2S1F1RO2',
-        nf_name: 'Пр1З2П1Э1 Квартира 2',
+        nf_name: 'Квартира 2',
         nf_floorid: 'P1B2S1F1',
         nf_numberonfloor: 2,
         nf_area: 55,

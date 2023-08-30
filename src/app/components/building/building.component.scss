@@ -1,17 +1,26 @@
 .building {
-    border: 1px solid black;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
+    height: 30px;
+    margin-bottom: 15px;
+    padding: 5px;
+    border-bottom: 2px solid rgb(206, 206, 206);
+    background-color: rgb(252, 252, 252);
 }
 
-.invisible {
-    display: none;
-    
+.b-name {
+    color: rgb(104, 104, 104);
+    margin: 0px;
+    padding: 0px;
 }
+
+// .invisible {
+//     display: none;    
+// }
 
 .sections {
+    width: auto;
     display: flex;
     flex-direction: row;
-    width: 100%;
+    background-color: rgb(252, 252, 252);
+    box-shadow: -2px -2px 7px rgb(211, 209, 209);
+    margin-left: 10px;
 }

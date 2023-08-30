@@ -1,11 +1,21 @@
 <div class="section">
-    <p>{{section.nf_name}}</p>
-</div>
-<div class="floors">
-    <ng-container *ngFor="let floor of floors">
-        <app-floor 
-        [floor] = floor
-        *ngIf="floor.nf_sectionid === section.nf_sectionid"
-        ></app-floor>
-    </ng-container>
+    <div class="head">
+        <p class="floor-description">№ на этаже / Этаж</p>
+        <div class="sub-head">
+            <p class="section-name">{{section.nf_name}}</p>
+            <div class="sub-head2">
+                <div [ngStyle]="{'width': '160px', 'height': '100%', 'border': '1px solid rgb(206, 206, 206)'}">1</div>
+                <div [ngStyle]="{'width': '160px', 'height': '100%', 'border': '1px solid rgb(206, 206, 206)'}">2</div>
+                <div [ngStyle]="{'width': '160px', 'height': '100%', 'border': '1px solid rgb(206, 206, 206)'}">3</div>
+            </div>
+        </div>
+    </div>    
+    <div class="floors">
+        <ng-container *ngFor="let floor of floors">
+            <app-floor 
+            [floor] = floor
+            *ngIf="floor.nf_sectionid === section.nf_sectionid"
+            ></app-floor>
+        </ng-container>
+    </div>
 </div>

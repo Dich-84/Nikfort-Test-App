@@ -1,7 +1,8 @@
 <div class="building"
 (click)="toggle()">
-    <p>{{ building.nf_name }}</p>
+    <p class="b-name">{{ building.nf_name | uppercase }}</p>
 </div>
+
 <div class="sections">
     <ng-container *ngFor="let section of sections">
         <app-section 
@@ -10,5 +11,4 @@
         *ngIf="section.nf_buildingid === building.nf_buildingid"
         ></app-section>
     </ng-container>
-    
 </div>
