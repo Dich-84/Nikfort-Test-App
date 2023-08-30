@@ -1,7 +1,17 @@
 .building {
     border: 1px solid black;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
 }
 
 .invisible {
     display: none;
+    
+}
+
+.sections {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
 }

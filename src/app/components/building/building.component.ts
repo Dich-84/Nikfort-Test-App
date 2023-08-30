@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { nf_building, nf_section } from 'src/app/data/realtyobjects';
 
 @Component({
   selector: 'app-building',
@@ -6,7 +7,19 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./building.component.scss']
 })
 export class BuildingComponent {
-  @Input() object: any
+  @Input() section: any
+  @Input() building: any
+
+  sections = nf_section
+  buildings = nf_building
+  
+  id: any = ''
+
+  constructor() {
+   
+  }
+
+  
 
   visible: boolean = false;
   toggle = ()=> {

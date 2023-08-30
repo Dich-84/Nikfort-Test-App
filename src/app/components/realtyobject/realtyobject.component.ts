@@ -6,5 +6,8 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./realtyobject.component.scss']
 })
 export class RealtyobjectComponent {
-  @Input() object: any
+  
+  @Input() section: any
+  @Input() building: any
+
 }

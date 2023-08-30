@@ -1,7 +1,18 @@
 <div class="building"
 (click)="toggle()">
-    <p>{{ object.nf_name }}</p>
+    <p>{{ building.nf_name }}</p>
 </div>
-<app-realtyobject [ngClass]="{invisible: !visible}">
+<div class="sections">
+    <ng-container *ngFor="let section of sections">
+        <app-realtyobject 
+        [ngClass]="{invisible: !visible}"
+        [section] = section
+        *ngIf="section.nf_buildingid === building.nf_buildingid"
+        ></app-realtyobject>
+    </ng-container>
+    
+</div>
 
-</app-realtyobject>
+
+
+
