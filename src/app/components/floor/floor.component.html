@@ -1,1 +1,11 @@
-<p>floor works!</p>
+<div class="floor">
+    <p>{{floor.nf_name}}</p>
+</div>
+<div class="realtyobjects">
+    <ng-container *ngFor="let realtyobject of realtyobjects">
+        <app-realtyobject 
+        [realtyobject] = realtyobject
+        *ngIf="realtyobject.nf_floorid === floor.nf_floorid"
+        ></app-realtyobject>
+    </ng-container>  
+</div>

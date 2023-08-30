@@ -1,1 +1,11 @@
-<p>section works!</p>
+<div class="section">
+    <p>{{section.nf_name}}</p>
+</div>
+<div class="floors">
+    <ng-container *ngFor="let floor of floors">
+        <app-floor 
+        [floor] = floor
+        *ngIf="floor.nf_sectionid === section.nf_sectionid"
+        ></app-floor>
+    </ng-container>
+</div>

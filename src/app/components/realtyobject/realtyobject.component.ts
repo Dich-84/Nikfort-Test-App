@@ -1,3 +1,4 @@
+import { Realtyobject } from './../../models/realtyobject';
 import { Component, Input } from '@angular/core';
 
 @Component({
@@ -7,7 +8,6 @@ import { Component, Input } from '@angular/core';
 })
 export class RealtyobjectComponent {
   
-  @Input() section: any
-  @Input() building: any
+ @Input() realtyobject: Realtyobject
 
 }

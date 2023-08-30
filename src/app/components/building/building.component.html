@@ -4,15 +4,11 @@
 </div>
 <div class="sections">
     <ng-container *ngFor="let section of sections">
-        <app-realtyobject 
+        <app-section 
         [ngClass]="{invisible: !visible}"
         [section] = section
         *ngIf="section.nf_buildingid === building.nf_buildingid"
-        ></app-realtyobject>
+        ></app-section>
     </ng-container>
     
 </div>
-
-
-
-

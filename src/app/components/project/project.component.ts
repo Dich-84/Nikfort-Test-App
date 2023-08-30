@@ -1,4 +1,5 @@
-import { nf_building } from '../../data/realtyobjects';
+import { Building } from './../../models/building';
+import { nf_building } from '../../data/buildings';
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,8 +7,9 @@ import { Component } from '@angular/core';
   templateUrl: './project.component.html',
   styleUrls: ['./project.component.scss']
 })
+
 export class ProjectComponent {
 
-  buildings = nf_building
+  buildings: Building[] = nf_building
 
 }
