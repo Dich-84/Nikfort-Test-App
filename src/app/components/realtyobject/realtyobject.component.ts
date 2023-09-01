@@ -1,3 +1,4 @@
+import { Status } from 'src/app/data/realtyobjectStatus';
 import { Realtyobject } from './../../models/realtyobject';
 import { Component, Input } from '@angular/core';
 
@@ -9,5 +10,6 @@ import { Component, Input } from '@angular/core';
 export class RealtyobjectComponent {
   
  @Input() realtyobject: Realtyobject
-
+ 
+ status = Status
 }

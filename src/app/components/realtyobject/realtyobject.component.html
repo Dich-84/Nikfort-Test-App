@@ -1,18 +1,29 @@
-<div class="realtyobject">
-    <tr>
-        <td>{{ realtyobject.nf_name }}</td>
-        <td [ngStyle]="{'width': '50%','text-align':'right'}">{{ realtyobject.nf_status }}</td>
-    </tr>
-    <tr>
-        <td>{{ realtyobject.nf_area }}</td>
-        <td [ngStyle]="{'width': '50%','text-align':'right'}">{{ realtyobject.nf_price }}</td>
-    </tr>
-    <tr>
-        <td></td>
-        <td [ngStyle]="{'width': '50%','text-align':'right'}">{{ realtyobject.nf_amount}}</td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-    </tr>
+<div 
+    class="realtyobject"
+    [ngClass]="{
+        sold: realtyobject.nf_status === status.sold,
+        free: realtyobject.nf_status === status.free,
+        estimation: realtyobject.nf_status === status.estimation,
+        booked: realtyobject.nf_status === status.booked
+    }"
+>
+    <table [ngStyle]="{'table-layout': 'fixed', 'width': '100%'}">
+        <tr>
+            <td>{{ realtyobject.nf_name }}</td>
+            <td [ngStyle]="{'text-align':'right'}">{{ realtyobject.nf_status }}</td>
+        </tr>
+        <tr>
+            <td>{{ realtyobject.nf_area }}</td>
+            <td [ngStyle]="{'text-align':'right'}">{{ realtyobject.nf_price | currency: 'RUB': 'symbol-narrow' }}</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td [ngStyle]="{'text-align':'right'}">{{ realtyobject.nf_amount | currency: 'RUB': 'symbol-narrow' }}</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    
 </div>
