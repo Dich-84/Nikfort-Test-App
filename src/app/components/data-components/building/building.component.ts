@@ -1,7 +1,7 @@
-import { Section } from './../../models/section';
+import { Building } from '../../../models/building';
+import { Section } from '../../../models/section';
 import { Component, Input } from '@angular/core';
 import { nf_section } from 'src/app/data/sections';
-import { Building } from 'src/app/models/building';
 
 @Component({
   selector: 'app-building',
@@ -15,8 +15,4 @@ export class BuildingComponent {
 
   sections: Section[] = nf_section
 
-  visible: boolean = false;
-  toggle = ()=> {
-    this.visible = !this.visible
-  }
 }

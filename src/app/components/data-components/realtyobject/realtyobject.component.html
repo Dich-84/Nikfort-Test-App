@@ -1,12 +1,21 @@
 <div 
     class="realtyobject"
+    id="{{ realtyobject.nf_realtyobjectid }}"
     [ngClass]="{
         sold: realtyobject.nf_status === status.sold,
         free: realtyobject.nf_status === status.free,
         estimation: realtyobject.nf_status === status.estimation,
-        booked: realtyobject.nf_status === status.booked
+        booked: realtyobject.nf_status === status.booked,
     }"
+    (click)="makeActive($event)"
+    (contextmenu)="displayContextMenu($event); false"
 >
+    <app-context-menu
+        *ngIf="rightClickMenuItems.length > 0 && isDisplayContextMenu"
+        [ngStyle]="getRightClickMenuStyle()"
+        [contextMenuItems]="rightClickMenuItems"
+        (onStatusMenuItemClick)="handleStatusItemClick($event)"      
+    ></app-context-menu>
     <table [ngStyle]="{'table-layout': 'fixed', 'width': '100%'}">
         <tr>
             <td>{{ realtyobject.nf_name }}</td>
@@ -24,6 +33,5 @@
             <td></td>
             <td></td>
         </tr>
-    </table>
-    
+    </table>    
 </div>

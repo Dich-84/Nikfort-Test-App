@@ -1,0 +1,31 @@
+.menu {
+    width: 130px;
+    height: 20px;
+    background-color: #fff;
+    border: 1px solid #333;
+    border-radius: 4px;
+    padding: 6px 0px 0px 5px;
+    cursor: pointer;
+    box-shadow: 5px 2px 10px rgba(0,0,0,0.5);
+}
+.sub-menu {
+    width: 100%;
+    margin-left: 0px;
+    padding: 5px;
+    position: absolute;
+    left: 99%;
+    top: 0;
+    background-color: #fff;
+    border: 1px solid #333;
+    border-radius: 4px;
+    box-shadow: 5px 2px 10px rgba(0,0,0,0.5);
+}
+.status-item {
+    margin: 0px 0px 3px 2px;
+    padding: 3px;
+    cursor: pointer;
+}
+.status-item:hover {
+    background-color: #333;
+    color: #fff;
+}
