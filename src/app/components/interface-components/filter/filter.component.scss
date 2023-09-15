@@ -1,7 +1,11 @@
+.filter-panel {
+    display: block;
+}
+
 .btn-div {
     min-width: 300px;
     height: 50px;
-    margin: 10px 0px 0px 10px;
+    margin: 10px -5px 0px 10px;
     background-color: rgb(245, 243, 243);
     box-shadow: inset;
     display: flex;
@@ -20,11 +24,19 @@
     height: 30px;
     box-shadow:-1px 1px 3px grey;
     display: flex;
+    cursor: pointer;
+}
+.apply-btn:hover {
+    background-color: rgb(189, 28, 63);
+    box-shadow: 0 0 0 2px #eecbd7;
+}
+.apply-btn:active {
+    box-shadow:1px 1px 2px rgba(0,0,0,0.4) inset;
 }
 .filter-div {
-    min-width: 300px;
+    width: 300px;
     margin: 20px 0 0 10px;
-    padding: 15px 0px 20px 0px;
+    padding: 0px 0px 10px 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -35,7 +47,9 @@
 .input {
     margin: 10px 0px 10px 0px;
     border: none;
-    border-bottom: 1px solid gray;
     width: 80%;
     outline: none;    
+}
+.invisible {
+    display: none;
 }

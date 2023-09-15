@@ -1,11 +1,31 @@
 
-<div class="btn-div">
-    <button class="apply-btn">
-        <img src="../assets/icons/search_icon.svg" [ngStyle]="{'max-width': '15px', 'margin-right': '4px' }"> 
-        Применить</button>    
-</div>
-
-<div class="filter-div">
-    <input class="input" type="filter" placeholder="Проекты">
-    <input class="input" type="filter" placeholder="Здания">
+<div class="filter-panel" id="filter-panel">
+    <div class="btn-div">
+        <button class="apply-btn"
+        (click)="handleButtonClick()"
+        >
+            <img src="../assets/icons/search_icon.svg" [ngStyle]="{'max-width': '15px', 'margin-right': '4px' }"> 
+            Применить</button>    
+    </div>
+    
+    <div class="filter-div">
+        <form [formGroup]="form" class="input">
+            <ng-multiselect-dropdown formControlName="projects"
+            [placeholder]="'Проекты'"
+            [settings]="projectDropdownSettings"
+            [data]="projectDropdownList"
+            (onSelect)="onItemSelect($event)"
+            (onDeSelect)="onItemDeSelect($event)"
+            (onSelectAll)="onSelectAll($event)"
+            (onDeSelectAll)="onSelectAll($event)"
+            >
+            </ng-multiselect-dropdown>
+            <ng-multiselect-dropdown formControlName="buildings"
+            [placeholder]="'Здания'"
+            [settings]="buildingDropdownSettings"
+            [data]="buildingDropdownList"
+            >
+            </ng-multiselect-dropdown>
+        </form>
+    </div>
 </div>

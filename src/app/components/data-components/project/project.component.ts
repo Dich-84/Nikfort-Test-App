@@ -1,6 +1,7 @@
 import { Building } from '../../../models/building';
 import { nf_building } from '../../../data/buildings';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { FilterServiceService } from 'src/app/services/filter-service.service';
 
 @Component({
   selector: 'app-project',
@@ -8,9 +9,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./project.component.scss']
 })
 
-export class ProjectComponent {
+export class ProjectComponent implements OnInit {
+  
+  buildings: Building[] = nf_building;
+  filterBuildings: Building[] = [];
+  hideFilter: Boolean = false
 
-  buildings: Building[] = nf_building
+  constructor(private readonly svc: FilterServiceService) {}
+  
+  ngOnInit(): void {
+    this.svc.filteredBuildings$.subscribe((filteredBuildings: Building[]) => this.filterBuildings = filteredBuildings)
+  }
 
   showTab(evt: any, buildingName: string): void {
     let sections: any = document.getElementsByClassName('sections');
@@ -25,5 +34,10 @@ export class ProjectComponent {
 
     document.getElementById(buildingName)!.style.display = "flex"
     evt.currentTarget!.className += ' active'
+  }
+
+  handleFilterHide(){
+      this.hideFilter ? document.getElementById('filter-panel')!.style.display = "block" : document.getElementById('filter-panel')!.style.display = "none"
+      this.hideFilter = !this.hideFilter
   }
 }

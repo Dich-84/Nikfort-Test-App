@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FilterComponent } from './components/interface-components/filter/filter.component';
@@ -10,6 +9,9 @@ import { BuildingComponent } from './components/data-components/building/buildin
 import { SectionComponent } from './components/data-components/section/section.component';
 import { FloorComponent } from './components/data-components/floor/floor.component';
 import { ContextMenuComponent } from './components/interface-components/context-menu/context-menu.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
+import { FilterServiceService } from './services/filter-service.service';
 
 @NgModule({
   declarations: [
@@ -24,9 +26,12 @@ import { ContextMenuComponent } from './components/interface-components/context-
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    NgMultiSelectDropDownModule.forRoot()
   ],
-  providers: [],
+  providers: [FilterServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

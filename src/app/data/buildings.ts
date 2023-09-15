@@ -10,5 +10,17 @@ export const nf_building = [
         nf_name: 'Здание 2',
         nf_projectid: 'P1',
         nf_sortnumber: 2,
+    },
+    {
+        nf_buildingid: 'P2B3',
+        nf_name: 'Здание 3',
+        nf_projectid: 'P2',
+        nf_sortnumber: 3,
+    },
+    {
+        nf_buildingid: 'P2B4',
+        nf_name: 'Здание 4',
+        nf_projectid: 'P2',
+        nf_sortnumber: 4,
     }
 ]

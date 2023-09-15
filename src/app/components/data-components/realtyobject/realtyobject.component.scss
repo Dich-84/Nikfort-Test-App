@@ -15,9 +15,9 @@
 .booked {
     background-color: rgba(240, 142, 202, 0.945);
 }
-.realtyobject:hover {
-    opacity: 0.8;
-}
 .realtyobject.active {
     border: 1px solid black;
+}
+.realtyobject:hover {
+    opacity: 0.8;
 }
