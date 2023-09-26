@@ -13,11 +13,23 @@ export class RealtyobjectComponent {
   @Input() isDisplayContextMenu: boolean;
  
   status = Status;
- 
+  realtyobjectsList: any = document.getElementsByClassName("realtyobject");
+
+  disableHover(): void {
+    for(let i = 0; i < this.realtyobjectsList.length; i++) {
+      this.realtyobjectsList[i].classList.remove("hasHover");
+      }  
+  };
+
+  enableHover(): void {
+    for(let i = 0; i < this.realtyobjectsList.length; i++) {
+      this.realtyobjectsList[i].classList.add("hasHover");
+      }
+  }
+
   makeActive(evt: any): void {
-    let realtyobjects: any = document.getElementsByClassName("realtyobject");
-    for(let i = 0; i < realtyobjects.length; i++) {
-    realtyobjects[i].className = realtyobjects[i].className.replace(" active", "");
+    for(let i = 0; i < this.realtyobjectsList.length; i++) {
+    this.realtyobjectsList[i].className = this.realtyobjectsList[i].className.replace(" active", "");
     }  
     document.getElementById(evt.currentTarget.id)!.className += " active";
   };
@@ -31,6 +43,9 @@ export class RealtyobjectComponent {
 
     this.rightClickMenuPositionX = event.clientX;
     this.rightClickMenuPositionY = event.clientY;
+
+    this.disableHover()
+    this.makeActive(event)
   };
 
   getRightClickMenuStyle() {
@@ -44,6 +59,7 @@ export class RealtyobjectComponent {
   handleStatusItemClick(event: any): void {
     this.realtyobject.nf_status = event.data;
     this.isDisplayContextMenu = false;
+    this.enableHover();
   };
 
   @HostListener('document:click')
@@ -53,6 +69,7 @@ export class RealtyobjectComponent {
         return;
       } 
       this.isDisplayContextMenu = false;
+      this.enableHover()
    };
 
   onBlur(): void {
