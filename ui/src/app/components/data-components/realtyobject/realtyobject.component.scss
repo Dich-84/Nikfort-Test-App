@@ -1,0 +1,23 @@
+.realtyobject {
+    width: 180px;
+    height: 85px;
+    border: 1px solid rgb(206, 206, 206);
+}
+.sold {
+    background-color: rgba(240, 137, 137, 0.925);
+}
+.free {
+    background-color: rgb(145, 221, 205);
+}
+.estimation {
+    background-color: rgb(245, 245, 245);
+}
+.booked {
+    background-color: rgba(240, 142, 202, 0.945);
+}
+.realtyobject.active {
+    border: 1px solid black;
+}
+.realtyobject:hover {
+    opacity: 0.8;
+}
