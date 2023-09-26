@@ -1,0 +1,156 @@
+﻿[
+	{
+		"nf_floorid": "P1B1S1F1",
+		"nf_name": "Этаж 1",
+		"nf_sectionid": "P1B1S1",
+		"nf_sortnumber": 111,
+		"nf_maxnumberonfloor": 3
+	},
+	{
+		"nf_floorid": "P1B1S1F2",
+		"nf_name": "Этаж 2",
+		"nf_sectionid": "P1B1S1",
+		"nf_sortnumber": 112,
+		"nf_maxnumberonfloor": 3
+	},
+	{
+		"nf_floorid": "P1B1S1F3",
+		"nf_name": "Этаж 3",
+		"nf_sectionid": "P1B1S1",
+		"nf_sortnumber": 113,
+		"nf_maxnumberonfloor": 3
+	},
+	{
+		"nf_floorid": "P1B1S1F4",
+		"nf_name": "Этаж 4",
+		"nf_sectionid": "P1B1S1",
+		"nf_sortnumber": 114,
+		"nf_maxnumberonfloor": 3
+	},
+	{
+		"nf_floorid": "P1B1S1F5",
+		"nf_name": "Этаж 5",
+		"nf_sectionid": "P1B1S1",
+		"nf_sortnumber": 115,
+		"nf_maxnumberonfloor": 3
+	},
+	{
+		"nf_floorid": "P1B1S1F6",
+		"nf_name": "Этаж 6",
+		"nf_sectionid": "P1B1S1",
+		"nf_sortnumber": 116,
+		"nf_maxnumberonfloor": 3
+	},
+	{
+		"nf_floorid": "P1B1S2F1",
+		"nf_name": "Этаж 1",
+		"nf_sectionid": "P1B1S2",
+		"nf_sortnumber": 121,
+		"nf_maxnumberonfloor": 3
+	},
+	{
+		"nf_floorid": "P1B1S2F2",
+		"nf_name": "Этаж 2",
+		"nf_sectionid": "P1B1S2",
+		"nf_sortnumber": 122,
+		"nf_maxnumberonfloor": 3
+	},
+	{
+		"nf_floorid": "P1B2S1F1",
+		"nf_name": "Этаж 1",
+		"nf_sectionid": "P1B2S1",
+		"nf_sortnumber": 211,
+		"nf_maxnumberonfloor": 2
+	},
+	{
+		"nf_floorid": "P2B3S1F1",
+		"nf_name": "Этаж 1",
+		"nf_sectionid": "P2B3S1",
+		"nf_sortnumber": 311,
+		"nf_maxnumberonfloor": 2
+	},
+	{
+		"nf_floorid": "P2B3S1F2",
+		"nf_name": "Этаж 2",
+		"nf_sectionid": "P2B3S1",
+		"nf_sortnumber": 312,
+		"nf_maxnumberonfloor": 2
+	},
+	{
+		"nf_floorid": "P2B3S1F3",
+		"nf_name": "Этаж 3",
+		"nf_sectionid": "P2B3S1",
+		"nf_sortnumber": 313,
+		"nf_maxnumberonfloor": 2
+	},
+	{
+		"nf_floorid": "P2B3S2F1",
+		"nf_name": "Этаж 1",
+		"nf_sectionid": "P2B3S2",
+		"nf_sortnumber": 321,
+		"nf_maxnumberonfloor": 2
+	},
+	{
+		"nf_floorid": "P2B3S2F2",
+		"nf_name": "Этаж 2",
+		"nf_sectionid": "P2B3S2",
+		"nf_sortnumber": 322,
+		"nf_maxnumberonfloor": 2
+	},
+	{
+		"nf_floorid": "P2B3S2F3",
+		"nf_name": "Этаж 3",
+		"nf_sectionid": "P2B3S2",
+		"nf_sortnumber": 323,
+		"nf_maxnumberonfloor": 2
+	},
+	{
+		"nf_floorid": "P2B3S3F1",
+		"nf_name": "Этаж 1",
+		"nf_sectionid": "P2B3S3",
+		"nf_sortnumber": 331,
+		"nf_maxnumberonfloor": 2
+	},
+	{
+		"nf_floorid": "P2B3S3F2",
+		"nf_name": "Этаж 2",
+		"nf_sectionid": "P2B3S3",
+		"nf_sortnumber": 332,
+		"nf_maxnumberonfloor": 2
+	},
+	{
+		"nf_floorid": "P2B3S3F3",
+		"nf_name": "Этаж 3",
+		"nf_sectionid": "P2B3S3",
+		"nf_sortnumber": 333,
+		"nf_maxnumberonfloor": 2
+	},
+	{
+		"nf_floorid": "P2B4S1F1",
+		"nf_name": "Этаж 1",
+		"nf_sectionid": "P2B4S1",
+		"nf_sortnumber": 411,
+		"nf_maxnumberonfloor": 3
+	},
+	{
+		"nf_floorid": "P2B4S1F2",
+		"nf_name": "Этаж 2",
+		"nf_sectionid": "P2B4S1",
+		"nf_sortnumber": 412,
+		"nf_maxnumberonfloor": 3
+	},
+	{
+		"nf_floorid": "P2B4S2F1",
+		"nf_name": "Этаж 1",
+		"nf_sectionid": "P2B4S2",
+		"nf_sortnumber": 421,
+		"nf_maxnumberonfloor": 3
+	},
+	{
+		"nf_floorid": "P2B4S2F2",
+		"nf_name": "Этаж 2",
+		"nf_sectionid": "P2B4S2",
+		"nf_sortnumber": 422,
+		"nf_maxnumberonfloor": 3
+	}
+]
