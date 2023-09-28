@@ -1,6 +1,7 @@
 import { Status } from 'src/app/data/realtyobjectStatus';
 import { Realtyobject } from '../../../models/realtyobject';
 import { Component, HostListener, Input } from '@angular/core';
+import { DataService } from 'src/app/services/data.service';
 
 @Component({
   selector: 'app-realtyobject',
@@ -14,6 +15,9 @@ export class RealtyobjectComponent {
  
   status = Status;
   realtyobjectsList: any = document.getElementsByClassName("realtyobject");
+
+  constructor(private dataService: DataService) {
+  }
 
   disableHover(): void {
     for(let i = 0; i < this.realtyobjectsList.length; i++) {
@@ -60,6 +64,9 @@ export class RealtyobjectComponent {
     this.realtyobject.nf_status = event.data;
     this.isDisplayContextMenu = false;
     this.enableHover();
+    this.dataService
+        .updateRealtyobjectStatus(this.realtyobject)
+        .subscribe()
   };
 
   @HostListener('document:click')

@@ -10,7 +10,7 @@ namespace WebApplication1.Services
 {
     public interface IRealtyobjectService
     {
-        void Update(Realtyobject category);
+        void Update(Realtyobject realtyobject);
 
         List<Realtyobject> GetAll();
 
@@ -43,11 +43,11 @@ namespace WebApplication1.Services
             return _realtyobjects;
         }
 
-        public void Update(Realtyobject category)
+        public void Update(Realtyobject realtyobject)
         {
-            var oldCategory = Get(category.nf_realtyobjectid);
+            var oldRealtyobject = Get(realtyobject.nf_realtyobjectid);
 
-            oldCategory.nf_status = category.nf_status;
+            oldRealtyobject.nf_status = realtyobject.nf_status;
 
             SaveChanges();
         }

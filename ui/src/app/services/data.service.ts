@@ -59,4 +59,9 @@ export class DataService {
   getAllRealtyobjects(): Observable<Realtyobject[]> {
     return this.http.get<Realtyobject[]>('http://localhost:64382/api/realtyobjects');
   }
+
+  updateRealtyobjectStatus(realtyobject: Realtyobject): Observable<Realtyobject> {
+    return this.http.put<Realtyobject>('http://localhost:64382/api/realtyobjects', realtyobject)
+
+  }
 }

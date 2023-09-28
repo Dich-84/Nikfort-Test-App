@@ -11,7 +11,7 @@ namespace WebApplication1.Controllers
 {
     public class FloorsController : ApiController
     {
-        IFloorService _floorService = new FloorService();
+        private IFloorService _floorService = new FloorService();
 
         public IHttpActionResult GetAll()
         {

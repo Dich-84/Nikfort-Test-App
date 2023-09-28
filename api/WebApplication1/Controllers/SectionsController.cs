@@ -10,7 +10,7 @@ namespace WebApplication1.Controllers
 {
     public class SectionsController : ApiController
     {
-        ISectionService _sectionService = new SectionService();
+        private ISectionService _sectionService = new SectionService();
 
         public IHttpActionResult GetAll()
         {

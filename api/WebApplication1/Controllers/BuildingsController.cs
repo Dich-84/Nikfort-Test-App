@@ -10,7 +10,7 @@ namespace WebApplication1.Controllers
 {
     public class BuildingsController : ApiController
     {
-        IBuildingService _buildingService = new BuildingService();
+        private IBuildingService _buildingService = new BuildingService();
 
         public IHttpActionResult GetAll()
         {
